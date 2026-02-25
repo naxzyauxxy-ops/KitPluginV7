@@ -1,0 +1,39 @@
+name: KitPlugin
+version: 2.0.0
+main: dev.kitplugin.KitPlugin
+api-version: 1.21
+authors: [YourName]
+
+commands:
+  kit:
+    description: Open the kit menu or claim a kit.
+    usage: /kit [kitname]
+    permission: kit.use
+  kitcooldown:
+    description: Manage kit cooldowns.
+    usage: /kitcooldown <remove|check> <player>
+    permission: kit.admin
+  kitreload:
+    description: Reload the kit config without restarting.
+    usage: /kitreload
+    permission: kit.admin
+
+permissions:
+  kit.use:
+    default: true
+  kit.admin:
+    default: op
+  kit.starter:
+    default: true
+  kit.vip:
+    default: false
+  kit.mvp:
+    default: false
+  kit.pro:
+    default: false
+  kit.elite:
+    default: false
+  kit.media:
+    default: false
+  kit.owner:
+    default: false

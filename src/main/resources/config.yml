@@ -1,0 +1,173 @@
+# ==============================
+#       KitPlugin Config
+# ==============================
+# Slot numbers (0 = top-left):
+#  0  1  2  3  4  5  6  7  8
+#  9 10 11 12 13 14 15 16 17
+# 18 19 20 21 22 23 24 25 26
+# 27 28 29 30 31 32 33 34 35
+
+gui:
+  title: "SERVER KITS"
+  rows: 4
+  book-slot: 31
+
+# ==============================
+#           KITS
+# ==============================
+# cooldown = seconds (3600 = 1 hour, 0 = no cooldown)
+# slot = where it appears in the GUI (see chart above)
+# icon = the item shown in the GUI (must be a valid Minecraft item name)
+# permission = permission node required to use this kit
+
+kits:
+
+  starter:
+    slot: 20
+    display-name: "&fSTARTER"
+    permission: kit.starter
+    cooldown: 1800
+    icon: IRON_CHESTPLATE
+    armor:
+      helmet:     IRON_HELMET
+      chestplate: IRON_CHESTPLATE
+      leggings:   IRON_LEGGINGS
+      boots:      IRON_BOOTS
+    armor-enchants:
+      PROTECTION: 2
+      UNBREAKING: 2
+      MENDING: 1
+    items:
+      - IRON_SWORD SHARPNESS:2 UNBREAKING:2 MENDING:1
+      - IRON_PICKAXE EFFICIENCY:2 UNBREAKING:2 MENDING:1
+      - COOKED_BEEF x64
+
+  vip:
+    slot: 21
+    display-name: "&6VIP"
+    permission: kit.vip
+    cooldown: 3600
+    icon: DIAMOND_CHESTPLATE
+    armor:
+      helmet:     DIAMOND_HELMET
+      chestplate: DIAMOND_CHESTPLATE
+      leggings:   DIAMOND_LEGGINGS
+      boots:      DIAMOND_BOOTS
+    armor-enchants:
+      PROTECTION: 4
+      UNBREAKING: 3
+      MENDING: 1
+      THORNS: 2
+    items:
+      - DIAMOND_SWORD SHARPNESS:5 UNBREAKING:3 FIRE_ASPECT:2 MENDING:1
+      - DIAMOND_PICKAXE EFFICIENCY:5 UNBREAKING:3 SILK_TOUCH:1 MENDING:1
+      - GOLDEN_APPLE x64
+
+  mvp:
+    slot: 22
+    display-name: "&eMVP"
+    permission: kit.mvp
+    cooldown: 5400
+    icon: DIAMOND_CHESTPLATE
+    armor:
+      helmet:     DIAMOND_HELMET
+      chestplate: DIAMOND_CHESTPLATE
+      leggings:   DIAMOND_LEGGINGS
+      boots:      DIAMOND_BOOTS
+    armor-enchants:
+      PROTECTION: 5
+      UNBREAKING: 3
+      MENDING: 1
+      THORNS: 3
+    items:
+      - DIAMOND_SWORD SHARPNESS:5 UNBREAKING:3 FIRE_ASPECT:2 LOOTING:3 MENDING:1
+      - DIAMOND_PICKAXE EFFICIENCY:5 UNBREAKING:3 SILK_TOUCH:1 MENDING:1
+      - ENCHANTED_GOLDEN_APPLE x32
+
+  pro:
+    slot: 23
+    display-name: "&cPRO"
+    permission: kit.pro
+    cooldown: 7200
+    icon: NETHERITE_CHESTPLATE
+    armor:
+      helmet:     NETHERITE_HELMET
+      chestplate: NETHERITE_CHESTPLATE
+      leggings:   NETHERITE_LEGGINGS
+      boots:      NETHERITE_BOOTS
+    armor-enchants:
+      PROTECTION: 5
+      UNBREAKING: 3
+      MENDING: 1
+      THORNS: 3
+      SOUL_SPEED: 3
+    items:
+      - NETHERITE_SWORD SHARPNESS:5 UNBREAKING:3 FIRE_ASPECT:2 LOOTING:3 MENDING:1
+      - NETHERITE_PICKAXE EFFICIENCY:5 UNBREAKING:3 SILK_TOUCH:1 MENDING:1
+      - ENCHANTED_GOLDEN_APPLE x64
+
+  elite:
+    slot: 24
+    display-name: "&4ELITE"
+    permission: kit.elite
+    cooldown: 10800
+    icon: NETHERITE_CHESTPLATE
+    armor:
+      helmet:     NETHERITE_HELMET
+      chestplate: NETHERITE_CHESTPLATE
+      leggings:   NETHERITE_LEGGINGS
+      boots:      NETHERITE_BOOTS
+    armor-enchants:
+      PROTECTION: 5
+      UNBREAKING: 3
+      MENDING: 1
+      THORNS: 3
+      AQUA_AFFINITY: 1
+      SOUL_SPEED: 3
+    items:
+      - NETHERITE_SWORD SHARPNESS:5 UNBREAKING:3 FIRE_ASPECT:2 LOOTING:3 KNOCKBACK:2 MENDING:1
+      - NETHERITE_PICKAXE EFFICIENCY:5 UNBREAKING:3 SILK_TOUCH:1 MENDING:1
+      - ENCHANTED_GOLDEN_APPLE x64
+
+  media:
+    slot: 25
+    display-name: "&dMEDIA"
+    permission: kit.media
+    cooldown: 3600
+    icon: DIAMOND_CHESTPLATE
+    armor:
+      helmet:     DIAMOND_HELMET
+      chestplate: DIAMOND_CHESTPLATE
+      leggings:   DIAMOND_LEGGINGS
+      boots:      DIAMOND_BOOTS
+    armor-enchants:
+      PROTECTION: 5
+      UNBREAKING: 3
+      MENDING: 1
+      AQUA_AFFINITY: 1
+    items:
+      - DIAMOND_SWORD SHARPNESS:5 UNBREAKING:3 FIRE_ASPECT:2 LOOTING:3 MENDING:1
+      - DIAMOND_PICKAXE EFFICIENCY:5 UNBREAKING:3 SILK_TOUCH:1 MENDING:1
+      - GOLDEN_APPLE x64
+
+  owner:
+    slot: 26
+    display-name: "&5OWNER"
+    permission: kit.owner
+    cooldown: 0
+    icon: NETHERITE_CHESTPLATE
+    armor:
+      helmet:     NETHERITE_HELMET
+      chestplate: NETHERITE_CHESTPLATE
+      leggings:   NETHERITE_LEGGINGS
+      boots:      NETHERITE_BOOTS
+    armor-enchants:
+      PROTECTION: 5
+      UNBREAKING: 3
+      MENDING: 1
+      THORNS: 3
+      SOUL_SPEED: 3
+    items:
+      - NETHERITE_SWORD SHARPNESS:5 UNBREAKING:3 FIRE_ASPECT:2 LOOTING:3 KNOCKBACK:2 MENDING:1
+      - NETHERITE_PICKAXE EFFICIENCY:5 UNBREAKING:3 FORTUNE:3 MENDING:1
+      - ENCHANTED_GOLDEN_APPLE x64
